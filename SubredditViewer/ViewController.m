@@ -173,15 +173,7 @@
     }
 }
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    ImageDisplayViewController *vc = [[ImageDisplayViewController alloc] init];
-    UIImage *tempImg = ((ImageCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath]).imageView.image;
-    vc.tempImg = tempImg;
-    vc.sourceURLString = [self.redditImages[indexPath.row] sourceURLString];
-    vc.redditImage = self.redditImages[indexPath.row];
-    
-    [self showViewController:vc sender:nil];
-}
+
 #pragma mark - View Delegate
 
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
@@ -190,6 +182,14 @@
 }
 
 #pragma mark - Transition Protocol
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ImageDisplayViewController *vc = (ImageDisplayViewController *)segue.destinationViewController;
+    NSIndexPath *index = [[self.collectionView indexPathsForSelectedItems] firstObject];
+    UIImage *tempImg = ((ImageCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:index]).imageView.image;
+    vc.tempImg = tempImg;
+    vc.sourceURLString = [self.redditImages[index.row] sourceURLString];
+    vc.redditImage = self.redditImages[index.row];
+}
 
 - (UIImageView *)transitionSourceImageView
 {

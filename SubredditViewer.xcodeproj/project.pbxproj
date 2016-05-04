@@ -19,6 +19,7 @@
 		3A3DDC4A1CD2F2AC003726D3 /* RedditDownloaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DDC3A1CD2F20F003726D3 /* RedditDownloaderTest.m */; };
 		3A3DDC4C1CD2F86B003726D3 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DDC4B1CD2F86B003726D3 /* testjson.json */; };
 		3A3DDC4F1CD30464003726D3 /* RedditImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DDC4E1CD30464003726D3 /* RedditImage.m */; };
+		3A6748841CD70F3B00654671 /* ImageDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6748831CD70F3B00654671 /* ImageDisplayViewController.m */; };
 		3ABEEEC91CD30CE7004EE0F1 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABEEEC71CD30CE7004EE0F1 /* ImageCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		3A3DDC4B1CD2F86B003726D3 /* testjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testjson.json; sourceTree = "<group>"; };
 		3A3DDC4D1CD30464003726D3 /* RedditImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditImage.h; sourceTree = "<group>"; };
 		3A3DDC4E1CD30464003726D3 /* RedditImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditImage.m; sourceTree = "<group>"; };
+		3A6748821CD70F3B00654671 /* ImageDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDisplayViewController.h; sourceTree = "<group>"; };
+		3A6748831CD70F3B00654671 /* ImageDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDisplayViewController.m; sourceTree = "<group>"; };
 		3ABEEEC61CD30CE7004EE0F1 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		3ABEEEC71CD30CE7004EE0F1 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
 		4DE2F0D58D2D5C5B04797B26 /* libPods-SubredditViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SubredditViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +107,7 @@
 				3ABEEEC51CD30CBD004EE0F1 /* View */,
 				3A3DDC211CD2E66E003726D3 /* AppDelegate.h */,
 				3A3DDC221CD2E66E003726D3 /* AppDelegate.m */,
-				3A3DDC241CD2E66E003726D3 /* ViewController.h */,
-				3A3DDC251CD2E66E003726D3 /* ViewController.m */,
+				3A6748851CD70F4200654671 /* ViewController */,
 				3ABEEEC41CD3090E004EE0F1 /* Model */,
 				3A3DDC271CD2E66E003726D3 /* Main.storyboard */,
 				3A3DDC2A1CD2E66E003726D3 /* Assets.xcassets */,
@@ -133,6 +135,17 @@
 				3A3DDC4B1CD2F86B003726D3 /* testjson.json */,
 			);
 			path = SubredditViewerTests;
+			sourceTree = "<group>";
+		};
+		3A6748851CD70F4200654671 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DDC241CD2E66E003726D3 /* ViewController.h */,
+				3A3DDC251CD2E66E003726D3 /* ViewController.m */,
+				3A6748821CD70F3B00654671 /* ImageDisplayViewController.h */,
+				3A6748831CD70F3B00654671 /* ImageDisplayViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		3ABEEEC41CD3090E004EE0F1 /* Model */ = {
@@ -330,6 +343,7 @@
 				3A3DDC201CD2E66E003726D3 /* main.m in Sources */,
 				3ABEEEC91CD30CE7004EE0F1 /* ImageCollectionViewCell.m in Sources */,
 				3A3DDC4F1CD30464003726D3 /* RedditImage.m in Sources */,
+				3A6748841CD70F3B00654671 /* ImageDisplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

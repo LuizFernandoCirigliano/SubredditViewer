@@ -6,6 +6,8 @@
 target 'SubredditViewer' do
 
 pod 'Masonry'
+pod 'RMPZoomTransitionAnimator'
+
 end
 
 target 'SubredditViewerTests' do

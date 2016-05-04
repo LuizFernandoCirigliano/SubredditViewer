@@ -44,10 +44,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WUh-Sz-JFR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5ng-aE-85T"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WUh-Sz-JFR" secondAttribute="bottom" id="gAy-US-hYg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WUh-Sz-JFR" secondAttribute="trailing" constant="-20" id="gS4-ih-RGt"/>
-                            <constraint firstItem="WUh-Sz-JFR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gtf-DE-FRW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WUh-Sz-JFR" secondAttribute="bottom" id="2Ui-wM-p3c"/>
+                            <constraint firstItem="WUh-Sz-JFR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="EzI-or-PHN"/>
+                            <constraint firstItem="WUh-Sz-JFR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="t7M-pb-FRc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WUh-Sz-JFR" secondAttribute="trailing" constant="-20" id="v6w-Or-F2a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uZn-O7-rMa"/>

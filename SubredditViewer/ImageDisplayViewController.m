@@ -79,8 +79,13 @@
 
 - (CGRect)transitionDestinationImageViewFrame
 {
-    CGFloat width = MIN(self.view.frame.size.width, self.redditImage.size.width);
-    CGFloat height = width*self.redditImage.size.height/self.redditImage.size.width;
+    CGSize frameSize = self.imageView.frame.size;
+    CGSize imgSize = self.redditImage.size;
+    
+    CGFloat scale = MIN(frameSize.width/imgSize.width, frameSize.height/imgSize.width);
+    CGFloat width = imgSize.width * scale;
+    CGFloat height = imgSize.height * scale;
+    
     CGFloat y = self.view.center.y - height/2;
     CGFloat x = self.view.center.x - width/2;
     CGRect frame = CGRectMake(x, y, width, height);

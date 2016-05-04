@@ -140,15 +140,6 @@
     return self.redditImages.count;
 }
 
-//-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    CGSize origSize = [self.photos[indexPath.row] size];
-//    
-//    CGFloat width = origSize.width > self.maxWidth ? self.maxWidth - 0.1 : origSize.width;
-//    CGFloat height = width * origSize.height/origSize.width;
-//    
-//    return CGSizeMake(width, height);
-//}
-
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ImageCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"photoCell" forIndexPath:indexPath];
     RedditImage *img = self.redditImages[indexPath.row];

@@ -83,7 +83,11 @@ static const NSTimeInterval kBackwardCompleteAnimationDuration = 0.18;
                                                   sourceImageView.transform = CGAffineTransformIdentity;
                                               }
                                               completion:^(BOOL finished) {
-                                                  sourceImageView.alpha = 0;
+                                                  [UIView animateWithDuration:1.0f animations:^{
+                                                      sourceImageView.alpha = 0;
+                                                  } completion:^(BOOL finished) {
+                                                       [sourceImageView removeFromSuperview];
+                                                  }];
                                                   if ([self.destinationTransition conformsToProtocol:@protocol(RMPZoomTransitionAnimating)] &&
                                                       [self.destinationTransition respondsToSelector:@selector(zoomTransitionAnimator:didCompleteTransition:animatingSourceImageView:)]) {
                                                       [self.destinationTransition zoomTransitionAnimator:self
@@ -94,7 +98,7 @@ static const NSTimeInterval kBackwardCompleteAnimationDuration = 0.18;
                                                   
                                                   // Remove the views from superviews to release the references
                                                   [alphaView removeFromSuperview];
-                                                  [sourceImageView removeFromSuperview];
+
                                               }];
                          }];
         

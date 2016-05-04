@@ -93,6 +93,10 @@
 
 -(void)zoomTransitionAnimator:(RMPZoomTransitionAnimator *)animator didCompleteTransition:(BOOL)didComplete animatingSourceImageView:(UIImageView *)imageView {
     self.imageView.hidden = NO;
+    self.imageView.alpha = 0;
+    [UIView animateWithDuration:0.5f animations:^{
+        self.imageView.alpha = 1;
+    }];
 }
 
 @end
